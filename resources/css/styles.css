@@ -1,0 +1,55 @@
+/*UNIVERSAL STYLES*/
+html {
+    font-size: 16px;
+    font-family: Verdana, sans;
+}
+
+body {
+ display: block;
+ margin-left: 24px;
+}
+
+/*HEADER & NAV*/
+.header-nav {
+    display: block;
+    color: black;
+    height: 64px;
+}
+.header-nav li {
+    display: flex;/*keeps li inline*/
+    list-style-type: none;
+    /*flex-direction: row-reverse; doing this here makes the logo li reverse, not the right floating li*/
+}
+
+/* NAV LINKS FLOAT RIGHT*/
+.nav-float-right   {
+    display: flex;
+    float: right;
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-right: 0;
+    /* don't forget to change order, but... how? flex-direction: row-reverse; is not working */
+}
+
+/*HOLDS school-icon and school name together and FLOAT LEFT*/
+.school-icon, .colmar-logo {
+    padding-left: 0px;
+    list-style-type: none;
+    float: left;
+    line-height: 32px;
+}
+.colmar-logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 0;
+}
+
+.academy-logo {
+    color: #615a5d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
