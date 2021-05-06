@@ -1,7 +1,7 @@
 /*UNIVERSAL STYLES*/
 html {
     font-size: 16px;
-    font-family: Verdana, sans;
+    font-family: Tahoma, sans-serif;
 }
 
 body {
@@ -61,22 +61,59 @@ li.nav-float-right {
 
 
 /* MAIN SECTION */
-main.first-section {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: ;
+main.first-section-flexbox {
+    display: inline-flex;
+    width: 100%;
     background-color: lightgray;
     padding-left: 24px;
+    /*align-items: center;*/
 }
-
-.first-section img {
-    grid-column: 1/ span 3;
+/* IMAGE IN FIRST SECTION */
+img#main-image {
+    display: flex;
+    align-items: flex-start;
     width: 60%;
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-right: 24px;
-   /* padding-right: 24px;*/
+    margin: 0;
     float: left;
+}
+/* ASIDE FIRST-SECTION CONTENT & FORM */
+div.first-section-header {
+    color: #40464F;
+    display: inline-flex; 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 150px; 
+    font-weight: bold;
+}
+
+h1, p { 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0;
+    padding-bottom: 15px;  
+    
+}
+
+/* FORM / ENROLL/START BUTTON */
+button.enroll-button {
+    background-color: black;
+    margin-top: 50px;
+    padding: 8px 0px 8px 0px;
+    color: lightgray;
+    font-size: 1.5rem;
+    display: block;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border: 0;
 }
 
 
