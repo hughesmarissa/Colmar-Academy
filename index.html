@@ -26,7 +26,7 @@
         <!--photo float left, block on the right-->
         <img id="main-image" src="resources/images/banner.jpg">
        
-        <div class="first-section-header"><h1>Learn something new everyday</h1>
+        <div class="first-section-header"><h1 class=>Learn something new everyday</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
         <!--insert button below-->
             <button class="enroll-button">Start here</button>
@@ -34,61 +34,89 @@
     </main>
 
 
-    <main-secondary class="main-secondary"> <!--float photo and h1&p to left, 3 column table float on the right-->
-        <h1  class="main-secondary">It doesn't hurt to keep practicing</h1>
-        <p>"Curabitur vitae libero in ipsurm porttitor consequat. Aliquam et commodo lectus,
-            nex conseuat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam egat magna laoreet, efficitur dolor consequat, tristique ligula."" </p>
-        <p>Emanuel Sr Strategist at Hiring.com</p>
+
+
+
+
+
+
+
+    <!--div class="secondary"--> <!--float photo and h1&p to left, 3 column table float on the right-->
+        <div class="secondary-left-side">
+            <img id="practice-img" src="resources/images/information-main.jpg">
+            <h1  class="main-secondary-header">It doesn't hurt to keep practicing</h1>
+            <p>"Curabitur vitae libero in ipsurm porttitor consequat. Aliquam et commodo lectus,
+                nex conseuat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam egat magna laoreet, efficitur dolor consequat, tristique ligula."" </p>
+            <p>Emanuel Sr Strategist at Hiring.com</p>
+        </div>   
         <!--insert 3 row table to float right-->
-    <table>
-        <tr>
-            <td>Orientation Date</td>
-            <td>Tues 10/11 & Wed 10/12: 8am-3pm</td>
-            <td><a href="#">Read more</a></td>
-        </tr>
-        <tr>
-            <td>Our Campus</td>
-            <td>Find which campus is close by you</td>
-            <td><a href="#">Read more</a></td>
-        </tr>
-        <tr>
-            <td>Our guest lecture</td>
-            <td>Join a keynote with Oliver Sack<p>about music in medical treatment</p></td>
-            <td><a href="#">Read more</a></td>
-        </tr>
-    </table>
-    </main-secondary>
-    <mid-page><!--background-color-change, display: block-->
+            <div class="right-container">
+                <div class="read-more-imgs">
+                    <img class="secondary-img" src="resources/images/information-orientation.jpg">
+                    <img class="secondary-img" src="resources/images/information-campus.jpg">
+                    <img class="secondary-img" src="resources/images/information-guest-lecture.jpg">
+            </div>
+            <div class="read-more">
+                <span class="orientation">
+                        <h2>Orientation Date</h2>
+                        <p>Tues 10/11 & Wed 10/12: 8am-3pm</p>
+                        <p><a href="#">Read more</a></p>
+                </span>
+
+                <span class="orientation">
+                        <h2>Our Campus</h2>
+                        <p>Find which campus is close by you</p>
+                        <p><a href="#">Read more</a></p>
+                </span>
+                <span class="orientation">
+                        <h2>Our guest lecture</h2>
+                        <p>Join a keynote with Oliver Sack</p> <p>about music in medical treatment</p>
+                        <p><a href="#">Read more</a></p>
+                </span>
+                
+            </div>
+            </div>
+    <!--/div-->
+
+
+
+    <div class="mid-page"><!--background-color-change, display: block-->
         <h1 class="header-main">Start Learning</h1>
-    <!-- use flex / 3x3 grid? -->
-
+    <!-- use flex / 3x3 grid? --><br><br>
+    <div id="computer"> <img class="third-section-imgs" src="resources/images/course-software.jpg">
     Software Engineering
-    COURSES
+    <h4>COURSES</h4>
     Web Development, Mobile Development, iOT, APIs
-
+</div>
+    <div id="computer">    <img class="third-section-imgs" src="resources/images/course-computer-art.jpg">
     Computer 
-    COURSESImaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
-
+    <h4>COURSES</h4>
+    Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+</div>
+    <div id="computer">    <img class="third-section-imgs"src="resources/images/course-design.jpg">
     Design
-    COURSES
+    <h4>COURSES</h4>
     User Experience Design, User Research , Visual Design
-    
+</div>    
+<div id="computer"><img class="third-section-imgs" src="resources/images/course-data.jpg">
     Data
-    COURSES
+    <h4>COURSES</h4>
     Data science, Big Data, SQL, Data Visualization
-
+</div>
+<div id="computer"> <img class="third-section-imgs" src="resources/images/course-business.jpg">
     Business
-    COURSES
+    <h4>COURSES</h4>
     Product Development, Business Development, Startup
-
+</div>
+<div id="computer"><img class="third-section-imgs" src="resources/images/course-marketing.jpg">
     Marketing
-    COURSES
+    <h4>COURSES</h4>
     Analytics, Content Marketing, Mobile Marketing
-    </mid-page>
+    </div>
 
-    <bottom-section> <!--background-color back to white-->
+    <div class="bottom-section"> <!--background-color back to white-->
         <!-- float video left, table right-->
-        <h1 class="header-main">Thesis exhibit</h1>
+    <h1 class="header-main">Thesis exhibit</h1>
             <video width="60%" height="" controls>
                 <source src="resources/videos/thesis.mp4" type="video/mp4">
             </video>
@@ -102,7 +130,7 @@
             <th>Now and then</th>
             <td>Research studt about New York</td>
         </table>
-    </bottom-section>
+    </div>
 </body>
 <footer><!--fontawesome for copyright-->
     <ul>

@@ -5,9 +5,12 @@ html {
 }
 
 body {
+    font-size: 16px;
+    font-family: Tahoma, sans-serif;
  display: block;
  margin: 0;
  padding: 0px;
+ width: 100%;
 }
 
 /* HEADER - SCHOOL NAME/LOGO & RIGHT-SIDE NAV */
@@ -48,6 +51,7 @@ color: gray;
 /* RIGHT-SIDE NAV BAR */
 ul.nav-header {
     display: flex;
+    width: 100%;
     flex-basis: 100%;
     justify-content: flex-end;
     margin-right: 8px;
@@ -60,13 +64,16 @@ li.nav-float-right {
 }
 
 
+
+
+
 /* MAIN SECTION */
 main.first-section-flexbox {
     display: inline-flex;
-    width: 100%;
+    /*width: 100%; ! using this makes the hor scroll on all the time*/
     background-color: lightgray;
     padding-left: 24px;
-    /*align-items: center;*/
+    
 }
 /* IMAGE IN FIRST SECTION */
 img#main-image {
@@ -80,17 +87,19 @@ img#main-image {
 }
 /* ASIDE FIRST-SECTION CONTENT & FORM */
 div.first-section-header {
+    width: 100%;
     color: #40464F;
     display: inline-flex; 
-    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 24px;
-    padding-right: 150px; 
+    padding-right: 125px; 
     font-weight: bold;
+    overflow: hidden;
+    float: right;
 }
 
-h1, p { 
+h1.headers { 
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -117,3 +126,115 @@ button.enroll-button {
 }
 
 
+
+
+
+
+/* SECOND SECTION - LEFT*/
+
+div.main-secondary {
+    font-family: helvetica;
+    font-size: 1.25rem;
+    display: block;
+    padding: 32px 0px 32px 24px;
+} /* mess with this if hor scroll bar exists */
+
+
+
+
+div.secondary {
+    font-family: helvetica;
+    font-size: 1.25rem;
+    display: block;
+    width: 98%;
+    height: auto;
+    
+} /* mess with this if hor scroll bar exists */
+div.secondary-left-side {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: auto;
+    width: 58%;    
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    margin-right: 16px;
+    font-family: helvetica;
+    font-size: 1.25rem;
+    
+}
+
+img#practice-img {
+    width: 100%;
+    padding-bottom: 32px;
+}
+ h1.main-secondary {
+     padding-bottom: 24px;
+ }
+
+div.right-container {
+    padding-top: 32px;
+    display: flex;
+    float: right;
+    width: 38%;
+    height: auto;
+}
+
+
+
+div.read-more-imgs {
+    display: block;
+    height: auto;
+    width: 35%;
+    margin: 0;
+    float: left;
+}
+
+img.secondary-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-bottom: 32px;
+}
+
+
+div.read-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65%;
+    float: left; 
+    flex-wrap: wrap;
+    padding-left: 16px;
+}
+ 
+span.orientation {
+     display: flex;
+     flex-direction: column;
+     line-height: 8px;
+ }
+
+
+p {
+    padding: 0;
+}
+
+
+/* MID-PAGE */
+div.mid-page {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    align-items: center;
+    padding: 32px 72px;
+    line-height: 8px; 
+    background-color: lightgray;
+}
+
+
+/* FOOTER */
