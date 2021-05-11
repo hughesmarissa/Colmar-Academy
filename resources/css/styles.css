@@ -303,6 +303,7 @@ div.bottom-section {
     color: rgb(104, 104, 104);
     display: block;
     margin: 32px 8px 32px 24px;
+    height: auto;
 }
 
 h1.header-main {
@@ -311,7 +312,14 @@ h1.header-main {
     
 }
 
+span.bottom-content-box {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    float: right;
+}
 span.bottom-section {
+    clear: top;
     display: block;
     width: 55%;
     float: left;
@@ -323,15 +331,14 @@ video {
 
 
 span.float-right-bottom, span.float-right-bottom2 {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 100%;
     float: left;
-    flex-wrap:  nowrap; 
-    
     align-items: center;
+    margin: 0;
 }
-
+ /* BACKGROUND COLOR SET TO LIGHTGRAY BOTTOM SECTION */
 span.float-right-bottom2, img.float-right-bottom2 {
     background-color: lightgray;
 }
@@ -340,9 +347,20 @@ img.float-right-bottom, img.float-right-bottom2 {
     width: 35%;
     height: auto;
     padding: 16px;
-
+    margin: 0;
 }
 
+span.last-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+h3 {
+    margin-bottom: 5px;
+}
+p.float-right-bottom {
+    margin: 0;
+}
 
 /* FOOTER */
 footer {
