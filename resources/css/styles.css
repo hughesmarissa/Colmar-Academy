@@ -231,14 +231,16 @@ span.orientation {
 
 /* MID-PAGE */
 
+
 h1.header-main {
     clear: both;
     display: block;
     line-height: 8px;
     text-align: center;
-    margin: 1px;
+    margin: 0px;
     padding-bottom: 32px;
-    height: auto;
+    padding-top: 32px;
+    height: 24px;
 }
 
 div.mid-page {
@@ -257,6 +259,7 @@ div.mid-page-content {
     width: 100%;
     justify-content: center;
 }
+
 
 div#computer {
     display: flex;
@@ -278,36 +281,70 @@ span.course-info {
     display: block;
     line-height: 8px;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 50px;
     color: rgb(104, 104, 104);
-    word-spacing: 9px;
+    word-spacing: 0px;
 }
 
 p.course-info {
-    line-height: 18px;
+    line-height: 20px;
     margin: 0;
-    padding: 0;
     letter-spacing: 1px;
-    
+}
+
+
+
+
+
+
+/* BOTTOM OF PAGE */
+
+div.bottom-section {
+    color: rgb(104, 104, 104);
+    display: block;
+    margin: 32px 8px 32px 24px;
+}
+
+h1.header-main {
+    display: block;
+    height: 24px;
     
 }
 
-/* BOTTOM OF PAGE */
-div.bottom-section {
-    clear: both;
+span.bottom-section {
     display: block;
+    width: 55%;
+    float: left;
+    padding-right: 24px;
+}
+video {
     width: 100%;
 }
 
 
-h2 {
-    font-weight: bold;
+span.float-right-bottom, span.float-right-bottom2 {
+    display: inline-flex;
+    flex-direction: row;
+    width: 40%;
+    float: left;
+    flex-wrap:  nowrap; 
     
+    align-items: center;
 }
 
-h4 {
-    font-weight: normal;
+span.float-right-bottom2, img.float-right-bottom2 {
+    background-color: lightgray;
+}
+
+img.float-right-bottom, img.float-right-bottom2 {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+
 }
 
 
 /* FOOTER */
+footer {
+    clear: both;
+}
